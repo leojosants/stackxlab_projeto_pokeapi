@@ -102,5 +102,5 @@ function clearSearch() {
     search_input.value = '';
     search_input.focus();
     displayPokemons(all_pokemons);
-    not_found_message.style.display='none';
+    not_found_message.style.display = 'none';
 }
