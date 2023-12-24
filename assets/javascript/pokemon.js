@@ -56,7 +56,7 @@ function displayPokemons(pokemons) {
         list_item.addEventListener('click', async () => {
             const success = await fetchPokemonDataBeforeRedirect(pokemon_id);
             if (success) {
-                window.location.href = `../../assets/detail_pokemon/html/detail.html?id=${pokemon_id}`;
+                window.location.assign(`../../assets/detail_pokemon/html/detail.html?id=${pokemon_id}`);
             }
         });
 
