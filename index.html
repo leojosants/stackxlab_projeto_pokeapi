@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PokestackX</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon.svg"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<script src="./assets/javascript/search.js" defer></script>
+		<script src="./assets/javascript/pokemon.js" defer></script>
+	</head>
+	<body>
+		<main class="main">
+			<header class="header home">
+				<div class="container">
+					<div class="logo-wrapper">
+						<i class="bx-spin bx-rotate-180">
+							<img src="./assets/images/pokeball.svg" alt="pokeball" />
+						</i>
+						<h1 style="margin-left: 10px">PokestackX</h1>
+					</div>
+					<div class="search-wrapper">
+						<div class="search-wrap">
+							<img
+								src="./assets/images/search.svg"
+								alt="search icon"
+								class="search-icon"
+								title="Pesquisar"
+							/>
+							<input
+								type="text"
+								class="search-input body3-fonts"
+								placeholder="Pesquisar"
+								id="search-input"
+							/>
+							<img
+								src="./assets/images/cross.svg"
+								alt="cross icon"
+								class="search-close-icon"
+								id="search-close-icon"
+								title="Apagar"
+							/>
+						</div>
+						<div class="sort-wrapper">
+							<div class="sort-wrap" title="Filtrar">
+								<img
+									src="./assets/images/sorting.svg"
+									alt="sorting"
+									class="sort-icon"
+									id="sort-icon"
+								/>
+							</div>
+							<div class="filter-wrapper">
+								<p class="body2-fonts" title="Filtrar por">
+									Filter by:
+								</p>
+								<div class="filter-wrap">
+									<div>
+										<input
+											type="radio"
+											id="number"
+											name="filters"
+											value="number"
+											style="cursor: pointer"
+											checked
+										/>
+										<label
+											for="number"
+											class="body3-fonts"
+											title="Número"
+											>Number</label
+										>
+									</div>
+									<div>
+										<input
+											type="radio"
+											id="name"
+											name="filters"
+											value="name"
+											style="cursor: pointer"
+											autocomplete="off"
+										/>
+										<label for="name" class="body3-fonts" title="Nome"
+											>Name</label
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="pokemon-list">
+				<div class="container">
+					<div class="list-wrapper"></div>
+				</div>
+				<div id="not-found-message">
+					<i class="bx bx-error bx-tada"></i>
+					Pokemon não encontrado!
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
