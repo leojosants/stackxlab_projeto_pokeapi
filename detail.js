@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const id = parseInt(pokemonID, 10);
 
     if (id < 1 || id > MAX_POKEMONS) {
-        return (window.location.href = '../../index.html');
+        return (window.location.href = './index.html');
     }
 
     currentPokemonID = id;
@@ -73,8 +73,7 @@ async function loadPokemon(id) {
                 });
             }
 
-            // window.history.pushState({}, '', `../detail.html?id=${id}`);
-            window.history.pushState({}, '', `../../detail.html?id=${id}`);
+            window.history.pushState({}, '', `./detail.html?id=${id}`);
         }
 
         return true;
