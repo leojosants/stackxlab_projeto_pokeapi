@@ -38,7 +38,7 @@ function displayPokemons(pokemons) {
         const fragment = document.createDocumentFragment();
 
         listItem.className = 'list-item';
-       
+
         listItem.innerHTML = `
             <div class='number-wrap'>
                 <p class='caption-fonts' style='font-size: 70%;'>${pokemonID} <<</p>
@@ -57,8 +57,7 @@ function displayPokemons(pokemons) {
         listItem.addEventListener('click', async () => {
             const success = await fetchPokemonDataBeforeRedirect(pokemonID);
             if (success) {
-                // window.location.href = `./detail.html?id=${pokemonID}`;
-                window.location.href = `../../assets/detail_pokemon/detail.html?id=${pokemonID}`;
+                window.location.href = `./detail.html?id=${pokemonID}`;
             }
         });
 

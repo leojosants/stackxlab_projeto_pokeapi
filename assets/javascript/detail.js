@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     currentPokemonID = id;
- 
+
     loadPokemon(id);
 });
 
@@ -73,7 +73,7 @@ async function loadPokemon(id) {
                 });
             }
 
-            window.history.pushState({}, '', `../detail_pokemon/detail.html?id=${id}`);
+            window.history.pushState({}, '', `../detail.html?id=${id}`);
         }
 
         return true;
