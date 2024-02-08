@@ -217,7 +217,7 @@ function displayPokemonDetail(pokemon) {
 
     document.querySelector(
         '.pokemon-detail-wrap .pokemon-detail p.body3-fonts.height'
-    ).textContent = `${height / 10}kg`;
+    ).textContent = `${height / 10}m`;
 
     const abilities_wrapper = document.querySelector('.pokemon-detail-wrap .pokemon-detail.move');
 
