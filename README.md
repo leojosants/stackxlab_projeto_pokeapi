@@ -1,6 +1,6 @@
 # 💻 Desafio do módulo Stackx Lab - StackX
 
-## Construção de um Catálogo de Pokémon online com a API PokeAPI <img src="https://slackmojis.com/emojis/22573-pokemon_balls/download">
+## Construção de um Catálogo de Pokémon online com a API PokeAPI
 - Projeto baseado na criação de um site interativo que funcione como um catálogo de informações de Pokémons.
 
 ## Requisitos
@@ -19,3 +19,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## :memo: Licença
 - Esse projeto está sob a licença MIT.
+
+## <img src="https://slackmojis.com/emojis/22573-pokemon_balls/download"> Confira minha proposta final:
+- [https://leojosants.github.io/stackxlab_projeto_pokeapi/index.html](https://leojosants.github.io/stackxlab_projeto_pokeapi/index.html)
